@@ -1,0 +1,784 @@
+:root{
+    /*COLORS*/
+    --Primary-Color: #FDE965 ;
+    --secondary-Color: #DE4129 ;
+    --tertiary-Color:  #e2c184; 
+    --title-Clr-:#5f9ea0; 
+
+    /* FONTS */
+    --PrFont: font-family: 'Roboto', sans-serif;
+    --SeFont: font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 3em;
+    background-image: url(../Assets/images/UserProfileBC.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit:contain; 
+    width: 100%;
+    height: 100vh;
+    opacity: .95;
+}
+
+body,
+h1,
+h3,
+h4,
+h5,
+a,
+p{
+   margin: 0;
+}
+a { text-decoration: none; color: white;}
+
+button , input{
+    outline: none;
+    border: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0em;
+    display: flex;
+    gap: 4em;
+    height: 10vh;
+    right: 0em;
+    width: 50%;
+    margin: 1em 1.5em 1em 1.5em;
+    justify-content: space-around;
+}
+
+
+.logo{
+    height: 21em;
+    width: auto;
+    position: relative;
+    top:-7.8em;
+    right: 2em;
+
+}
+
+.logo:hover{
+    content: url(../Assets/images/Dark\ Engines\ Hover.png);
+}
+.User-profile{
+    height: 100vh;
+    }
+
+    .Name{
+        position: fixed;
+        font-size: 5em;
+        color:#e2c184;
+        text-shadow: black 3px 5px;
+        bottom: 1em;
+        left: 2em;
+    }
+main{
+    display: flex;
+    gap: 3em;
+}
+
+
+
+
+
+#Myaccount {
+    cursor: pointer;
+    height: 2.9em;
+    border-radius: 50px;
+    padding: 3px 45px 10px 7px;
+    font-size: 1.45em;
+    font-family: var(--PrFont);
+    font-weight: 900;
+    display: flex;
+    position: relative;
+    background-color: var(--tertiary-Color);
+    color: var(--title-Clr-);
+
+   
+}
+
+#Myaccount  h4 {
+    position: relative;
+    top: 10px;
+    left: 6px;
+    font-size: 1.8em;
+}
+#Myaccount  > img {
+    height: 95px;
+    width: auto;
+    border-radius: 50px;
+    transition: 500ms;
+}
+#Myaccount:hover{
+    background-color: white;
+    color: var(--tertiary-Color);
+    font-size: 1.55em;
+    position: relative;
+    top: -2px;  
+    left: 10px;
+    transition: 500ms;
+
+}
+b{
+    color: green;
+    font-size: 1.8em;
+    position: absolute;
+    top: -0.55em;
+    
+
+}
+
+
+
+
+
+
+.User-fill{
+    background-color: rgba(247, 235, 211, 0.815);
+    height: 75vh;
+    width: min(50%, 35em);
+    position: relative;
+    top: 9em;
+    border-radius: 50px;
+    transform: translate(30%, 0%);
+    margin: 1em 2.5em 1em 2.5em;
+} 
+
+.User-fill > h2{
+margin: 0.55em;
+font-size: 3.1em;
+color: var(--title-Clr-);
+text-align: center;
+text-shadow: black 3px 4px; 
+
+}
+
+#top{
+    display: flex;
+    list-style: none;
+    font-size: 1.9em;
+    gap: 1.15em;
+    right: 10px;
+    justify-content: center;
+    position: relative;
+    top: 2em;
+    text-shadow:  black 2px 2px ;
+    color: rgb(206, 204, 204);
+}
+
+
+#bottom{
+    display: flex;
+    list-style: none;
+    font-size: 2.1em;
+    gap: 2.8em;
+    justify-content: center;
+    position: relative;
+    top: 2em;
+    left: 5px;
+    text-shadow:  black 3px 3px ;
+    color: rgb(206, 204, 204);
+
+}
+
+#Edit{
+    font-size: 2.5em;
+    background-color: #5f9ea0;
+    border-radius: 2em;
+    font-weight: 600;
+    font-family: var(--PrFont);
+    padding: 0.60em 1.1em 0.60em 1.1em;
+    position: relative;
+    left:3.8em;
+    top: 2.9em;
+    cursor: pointer;
+    color: rgba(243, 208, 184, 0.801);
+    box-shadow: black 1px 2px;
+    transition: 500ms ease-out;
+}
+#Edit:hover{
+    color: rgba(96, 157, 159, 0.801);
+    background: var(--tertiary-Color);
+    box-shadow: black 2px 1px;
+    padding: 0.65em 1.2em 0.65em 1.2em;
+    transition: 500ms ease-in;
+
+}
+
+i{
+    position: absolute;
+    bottom: 0em;
+    font-size: 20px;
+    left: 14.2em;
+    color: gray;
+}
+
+.On-top{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(188, 129, 255, 0.931);
+    transform: translate(-50%, -50% );
+    border-radius: 1em;
+    opacity: .95;
+    display: none;
+
+
+}
+
+.On-top > ul {
+
+display: flex;
+gap: 3em;
+list-style: none;
+font-size: 2em;
+position: relative;
+justify-content: center;
+margin: 5em 1em 2em 2em
+}
+
+.On-top > ul > li > a:hover{
+
+    color: #FDE965;
+    font-size:  1.1em;
+    position: relative;
+    top: -15px;
+
+}
+
+.On-top > a{
+ position: absolute;
+ right: 15px ;
+ top: 20px;
+ font-size: 2.8em;
+ color: #FDE965;
+ transform: rotate(360deg);
+ transition: 1s ease-out;
+ border-radius: 50px;
+ width: 1.1em;
+ text-align: center;
+ background-color: red
+
+
+ 
+}
+.On-top > a:hover {
+
+    color: rgb(214, 21, 4);
+    font-size: 3.3em;
+ transform: rotate(-1440deg);
+ transition: 1s ease-in;
+ background: transparent;
+
+
+}
+#display-Pop-up:target{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width: 1860px)
+{
+
+
+    header{
+
+        width: min(20%, 20em);
+    gap: 5em;
+
+    }
+
+#Myaccount {
+    border-radius: 50px;
+    padding: 2px 35px 10px 7px;
+    font-size: 1.40em;
+    background-color: red; 
+}
+
+#Myaccount  h4 {
+    font-size: 5em;
+}
+#Myaccount  > img {
+    height: 73px;
+
+}
+#Myaccount:hover{
+    font-size: 1.45em;
+}
+b{
+    color: green;
+    font-size: 1.7em;
+    top: -0.50em;
+    right: -22px;  
+}
+
+
+.logo{
+    height: 17em;
+    width: auto;
+    position: relative;
+    top:-6.8em;
+    right: 2em;
+
+}
+.Name{
+    font-size: 3.8em;
+}
+
+
+
+
+#User-fill{
+    background-color: rgba(247, 235, 211, 0.815);
+    height: 75vh;
+    width: min(40%, 28em);
+    position: relative;
+    top: 8em;
+    border-radius: 50px;
+    transform: translate(10%, 0%);
+    margin: 1em 1em 1em 1em;
+} 
+
+.User-fill > h2{
+margin: 0.60em;
+font-size: 2.5em;
+}
+
+#top{
+    font-size: 1.4em;
+    right: 10px;
+    top: 2em;
+}
+
+
+#bottom{
+    display: flex;
+    list-style: none;
+    font-size: 1.75em;
+    left: 12px;
+    text-shadow:  black 3px 3px ;
+    color: rgb(206, 204, 204);
+
+}
+
+#Edit{
+    font-size: 1.8em;
+    background-color: #5f9ea0;
+    padding: 0.40em 0.90em 0.40em 0.90em;
+    position: relative;
+    left:5em;
+    top: 2.5em;
+ 
+}
+#Edit:hover{
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+
+i{
+    left: 10em;
+    color: gray;
+}
+
+    .On-top > ul {
+        color: #FDE965;
+        font-size:  1.5em;
+        position: relative;
+        top: 0.50em;   
+    }
+
+    .On-top > ul > li > a:hover{
+        font-size:  1em;   
+    }
+
+  .User-profile {
+      height:100vh;
+      position: relative;
+      left: -2em;
+  }  
+  .logo{
+      position: relative;
+      right:5em;
+  }
+}
+
+
+
+
+@media screen  and (max-width: 2200px)
+{
+
+#Myaccount {
+    height: 2.3em;
+    border-radius: 50px;
+    padding: 2px 35px 10px 7px;
+    font-size: 1.40em;
+}
+
+#Myaccount  h4 {
+    font-size: 1.2em;
+}
+#Myaccount  > img {
+    height: 73px;
+
+}
+#Myaccount:hover{
+    font-size: 1.45em;
+}
+b{
+    color: green;
+    font-size: 1.7em;
+    top: -0.50em;
+    right: -22px;  
+}
+
+
+.logo{
+    height: 17em;
+    width: auto;
+    position: relative;
+    top:-6.8em;
+    right: 2em;
+
+}
+.Name{
+    font-size: 3.8em;
+}
+
+
+
+
+#User-fill{
+    background-color: rgba(247, 235, 211, 0.815);
+    height: 75vh;
+    width: min(40%, 28em);
+    position: relative;
+    top: 8em;
+    border-radius: 50px;
+    transform: translate(10%, 0%);
+    margin: 1em 1em 1em 1em;
+} 
+
+.User-fill > h2{
+margin: 0.60em;
+font-size: 2.5em;
+}
+
+#top{
+    font-size: 1.4em;
+    right: 10px;
+    top: 2em;
+}
+
+
+#bottom{
+    display: flex;
+    list-style: none;
+    font-size: 1.75em;
+    left: 12px;
+    text-shadow:  black 3px 3px ;
+    color: rgb(206, 204, 204);
+
+}
+
+#Edit{
+    font-size: 1.8em;
+    background-color: #5f9ea0;
+    padding: 0.40em 0.90em 0.40em 0.90em;
+    position: relative;
+    left:5em;
+    top: 2.5em;
+ 
+}
+#Edit:hover{
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+
+i{
+    left: 10em;
+    color: gray;
+}
+
+    .On-top > ul {
+        color: #FDE965;
+        font-size:  1.5em;
+        position: relative;
+        top: 0.50em;   
+    }
+
+    .On-top > ul > li > a:hover{
+        font-size:  1em;   
+    }
+
+  .User-profile {
+      height:100vh;
+      position: relative;
+      left: -2em;
+  }  
+  .logo{
+      position: relative;
+      right:5em;
+  }
+}
+
+
+
+
+
+@media screen  and (max-width: 2880px)
+{
+
+
+    header{
+
+        width: min(85%, 62em);
+    gap: 12em;
+
+    }
+#Myaccount {
+    height: 2.62em;
+    border-radius: 50px;
+    padding: 3px 45px 25px 7px;
+    font-size: 1.40em;
+    position: relative;
+    left: 2em;
+}
+
+#Myaccount  h4 {
+    font-size: 1.4em;
+}
+#Myaccount  > img {
+    height: 83px;
+
+}
+#Myaccount:hover{
+    font-size: 1.45em;
+    left: 1.5em;
+}
+b{
+    right: -25px;  
+}
+
+
+.Name{
+    font-size: 5em;
+    left:2.5em;
+}
+
+
+
+
+#User-fill{
+    height: 70vh;
+    width: min(40%, 38em);
+    position: relative;
+    top: 10em;
+    border-radius: 50px;
+    transform: translate(10%, 0%);
+    margin: 1em 1em 1em 1em;
+} 
+
+.User-fill > h2{
+margin: 1.1em;
+font-size: 3em;
+}
+
+#top{
+    font-size: 2em;
+}
+
+
+#bottom{
+    font-size: 2.39em;
+    left: 13px;
+
+}
+
+#Edit{
+    font-size: 2.5em;
+    background-color: #5f9ea0;
+    padding: 0.40em 0.90em 0.40em 0.90em;
+    position: relative;
+    left:4.5em;
+    top: 3em;
+ 
+}
+#Edit:hover{
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+
+i{
+    font-size: 0.90em;
+    left: 14.5em;
+}
+
+    .On-top > ul {
+        font-size:  2.2em;
+        top: 0.90em;
+    }
+
+
+  .User-profile {
+      position: relative;
+      left: -2em;
+  }  
+  .logo{
+      position: relative;
+      right:5em;
+  }
+}
+
+
+
+
+@media screen  and (max-width: 1920px)
+{
+
+
+    header{
+
+        width: min(50%,39em);
+    gap: 2em;
+
+    }
+#Myaccount {
+    height: 2.2em;
+    border-radius: 50px;
+    padding: 2px 35px 10px 7px;
+    font-size: 1.40em;
+}
+
+#Myaccount  h4 {
+    font-size: 1.15em;
+}
+#Myaccount  > img {
+    height: 70px;
+
+}
+#Myaccount:hover{
+    font-size: 1.45em;
+}
+b{
+    color: green;
+    font-size: 1.7em;
+    top: -0.50em;
+    right: -22px;  
+}
+
+
+.logo{
+    height: 17em;
+    width: auto;
+    position: relative;
+    top:-6.8em;
+    right: 2em;
+
+}
+.Name{
+    font-size: 3.8em;
+}
+
+
+
+
+#User-fill{
+    background-color: rgba(247, 235, 211, 0.815);
+    height: 75vh;
+    width: min(40%, 28em);
+    position: relative;
+    top: 8em;
+    border-radius: 50px;
+    transform: translate(10%, 0%);
+    margin: 1em 1em 1em 1em;
+} 
+
+.User-fill > h2{
+margin: 0.60em;
+font-size: 2.5em;
+}
+
+#top{
+    font-size: 1.4em;
+    right: 10px;
+    top: 2em;
+}
+
+
+#bottom{
+    display: flex;
+    list-style: none;
+    font-size: 1.75em;
+    left: 12px;
+    text-shadow:  black 3px 3px ;
+    color: rgb(206, 204, 204);
+
+}
+
+#Edit{
+    font-size: 1.8em;
+    background-color: #5f9ea0;
+    padding: 0.40em 0.90em 0.40em 0.90em;
+    position: relative;
+    left:5em;
+    top: 2.5em;
+ 
+}
+#Edit:hover{
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+
+i{
+    left: 8em;
+    color: gray;
+}
+
+    .On-top > ul {
+        color: #FDE965;
+        font-size:  1.5em;
+        position: relative;
+        top: 0.50em;   
+    }
+
+    .On-top > ul > li > a:hover{
+        font-size:  1em;   
+    }
+
+  .User-profile {
+      height:100vh;
+      position: relative;
+      left: -2em;
+  }  
+  .logo{
+      position: relative;
+      right:5em;
+  }
+}

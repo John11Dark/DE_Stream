@@ -1,0 +1,321 @@
+:root{
+    /*COLORS*/
+    --Primary-Color: #FDE965 ;
+    --secondary-Color: #DE4129 ;
+    --tertiary-Color:  #e2c184; 
+    --title-Clr-:#5f9ea0; 
+
+    /* FONTS */
+    --PrFont: font-family: 'Roboto', sans-serif;
+    --SeFont: font-family: 'Poppins', sans-serif;
+
+    
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 3.2em;
+    background-image: url(../Assets/images/BackGround\ all.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+
+body,
+h1,
+h4{
+   margin: 0;
+}
+h1
+ {
+   margin-bottom: 0.50rem;
+   font-weight: bolder;
+   color: white;
+   font-size: 1.9em;
+}
+a { text-decoration: none; color: white;}
+
+button{
+    outline: none;
+    border: none;
+}
+
+
+/* Header design */
+
+header {
+    background-color: #deb88794;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 8.5vh;
+    position: fixed;
+    z-index: 5;
+
+}
+
+.User-profile{
+    cursor: pointer;
+    height: 1.8em;
+    border-radius: 50px;
+    padding: 3px 25px 10px 7px;
+    font-size: 1.45em;
+    font-family: var(--PrFont);
+    font-weight: 900;
+    display: flex;
+    color: var(--tertiary-Color);
+    background-color: white;
+   
+}
+
+.User-profile h4 {
+    position: relative;
+    top: 10px;
+    left: 2px;
+}
+
+.User-profile h4 > b{
+position: absolute;   
+font-size: 2em;
+    right: -22px;
+    top: -0.60em;
+}
+.User-profile > img {
+    height: 60px;
+    width: auto;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.User-profile:hover{
+    background-color: var(--tertiary-Color);
+    color: var(--title-Clr-);
+    font-size: 1.55em;
+    position: relative;
+    top: -2px;  
+    left: 10px;
+    transition: 500ms;
+
+}
+
+
+.Logo{
+    height: auto;
+    width: 13em;
+   position: relative;
+    top: 1em;
+    right: 3em;
+    z-index: 0;
+}
+.Logo:hover{
+    content: url(../Assets/images/Dark\ Engines\ Hover.png);
+}
+
+.Current-page{
+    position: relative;
+    font-size: 2.9em;
+    right: 2em;
+}
+
+
+/* Aside bar design  */
+
+
+aside{
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    background-color: #deb88760;
+    width: 4%;
+    height: 100Vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 0;
+    opacity: .50;
+}
+aside:hover{
+    transition: 500ms;
+    opacity: 1;
+    width: 5.5%;
+}
+
+aside:hover .Page-Links{
+    font-size: 25px;
+    position: relative;
+}
+.Page-Links > img{
+    height: 100%;
+    width: 20em;
+}
+
+#Link1 > img{
+background-color: var(--title-Clr-);
+align-self: center;
+border-radius: 50%;
+width: 20em;
+height: 85%;
+}
+
+.Page-Links > img:hover {
+    position: relative;
+    top: -15px;
+}
+
+
+/* Elements /items design */
+section{
+    margin: 0em 2em 1em 2em;
+    margin-inline:auto ;
+    width: min(80%, 65em);
+    max-width: 65em;
+    align-self: center;
+    transform: translate(0%, 0%);
+    
+}
+
+Main{
+    margin: 0 2em 0 2em ;
+    width: min(85%, 60em);
+    position: relative;
+    left: 14em;
+}
+
+.button > button{
+    font-family: var(--PrFont);
+    font-weight: 900;
+    font-size: 2.2em;
+    padding: 2px 1em ;
+    border-radius: 50px;
+    background-color: #e2c184;
+    color: #5f9ea0bb;
+    position: relative;
+    top: 1em;
+    left: 1em;
+    margin-right: 1.2em;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+}
+.button > button:hover{
+    padding: 8px 1.1em ;
+    color: #e2c184;
+    background-color: #5f9ea0bb;
+    transform: rotate(0deg);
+    animation: HovRotate 850ms infinite;
+}
+
+@keyframes HovRotate {
+
+    0% {     
+        transform :rotate(8deg);
+
+     }
+
+    100% {
+         transform :rotate(-6deg);
+    }
+}
+.Broken-link{
+    position: relative;
+    top: 2em;
+    height: 19em;
+}
+
+#LearnMore{
+position: relative;
+font-size: 1.2em;
+top: 1.9em;
+left: 1em;
+color: #5f9ea0;
+transition: 250ms;
+text-shadow: black 2px 4px;
+}
+
+#LearnMore:hover{
+
+color: #e2c184;
+font-size: 1.3em;
+text-transform: uppercase;
+font-style: italic;
+}
+
+
+
+/*Footer Design*/
+footer{
+    background-color: #2e8b5693;
+    position: fixed;
+    bottom: 0em;
+    width: 25em;
+    left: 26.9em;
+    height: 3em;
+    color: white;
+    text-align: center;
+    border-radius:50px ;
+    transition: 1s all ease;     
+}
+h3{
+position: relative;
+top: -1em;
+}
+
+footer:hover{
+    display: flex;
+    gap: 2em;
+    height: 3em;
+    width: 50em;
+    left: 20em;
+    background-color: #deb88760;
+    
+}
+footer:hover > h3{
+position: relative;
+left: 2em;
+top: -1em;
+font-size: 1.25em;
+opacity: 0;
+animation: opacityS 1.6s forwards;
+}
+
+
+@keyframes opacityS {
+
+   
+     0% { opacity: 0;
+     }
+     60%{
+        opacity: .10;
+     }
+     80%{
+        opacity: .20;
+     }
+     85%{
+         opacity: .50;
+     }
+    100% {
+        opacity: 1;
+    } 
+}
+b{
+    position: absolute;
+    color: green;
+    font-size: 3.5em;
+    top: -.3em;
+}
+
+

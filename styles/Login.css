@@ -1,0 +1,506 @@
+:root{
+    /*COLORS*/
+    --Primary-Color: #FDE965 ;
+    --secondary-Color: #DE4129 ;
+    --tertiary-Color: #ABC1D0; 
+    --title-Clr-:#5f9ea0; 
+
+    /* FONTS */
+    --PrFont: font-family: 'Roboto', sans-serif;
+    --SeFont: font-family: 'Poppins', sans-serif;
+
+    
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 3.2em;
+    background-image: url(../Assets/images/BackGroundLoginpage.gif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+p{ 
+    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--title-Clr-);
+    line-height: 1.9em;
+}
+body,
+h1,
+h3,
+h4,
+p {
+   margin: 0;
+}
+h1,
+h3,
+h4
+ {
+   margin-bottom: 0.50rem;
+   font-weight: bolder;
+   color: white;
+   font-size: 2.7em;
+}
+a { text-decoration: none; color: white;   }
+
+main{ 
+    align-self: center;
+    width: min(80%, 55em);
+    width: max(90%, 65em);
+    display: flex;
+    gap: 3em;
+}
+section{
+    align-self: center;
+    transform: translate(4%, 10%);
+    width: min(85% , 85em);
+    margin-left: 5em ;
+    margin-right:5em ;
+
+
+}
+button , input{
+    outline:none;
+}
+.main{
+    position: relative;
+    top:-2em ;
+    width: min(88%, 51em );
+
+}
+
+.Logo{
+ height: 15em;
+ width: 40%;
+ position: relative;
+ top: 5em;
+ left: 7em;
+}
+
+.Head-Title{
+    position: relative;
+    left: 2em;
+    top: -0.5em;
+    margin: 1.1em;
+    text-shadow: black 3px 4px;
+    letter-spacing: 1.5px;
+
+    
+}
+.Sub-Title{
+    
+position: relative;
+top: -2.5em;
+left: 6em;
+text-shadow: black 3px 4px;
+text-align: justify;
+font-size: clip(1.5em, 3vw, 2em);
+letter-spacing: 1px;
+     
+}
+.Sub-Buttons{
+
+    position: relative;
+    left: 11em;
+    top: -0.90em;
+    
+}
+.Free-trial{
+background-color: var(--secondary-Color);
+color: white;
+font-size: 1.2em;
+border-radius: 50px;
+padding: 0.6em 1em ;
+font-family: var(--PrFont);
+font-weight: bolder;
+margin-right:0.90em;
+cursor: pointer;
+outline: none;
+border:none;
+}
+.Free-trial:hover{
+    padding: 0.75em 1.3em;
+     box-shadow:  0 0 10px #fde96575, 0 0 10px 
+     #fde965a8, 0 0 10px #fde96552, 0 0 10px #fde965ab;
+
+}
+.Sub-Buttons a {
+    text-shadow: black 2px 4px;
+}
+.Sub-Buttons a:hover{
+    text-decoration: 5px underline;
+    font-size: 1.2em;
+    color: var(--title-Clr-);
+    text-shadow:  black 1px 3px;
+}
+
+
+.Log-Main{
+    margin-left:3em ;
+
+position: relative;
+left: 60em;
+top: 6em;
+margin-left: 3em;
+margin-right: 3em;
+
+}
+
+.Log-Main{
+    position: absolute;
+    right: 0em;
+    width: 25em;height: 35em;
+    background: linear-gradient(2deg, #deffbe,rgb(214, 214, 214), rgb(214, 255, 197)) no-repeat;
+    opacity: .85;
+    border-radius:25px;
+    border: solid 1.5px silver;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#Logo-Login{
+    position: absolute;
+    top:-14em;
+    left: 3.5em;
+    height: 27em;
+}
+
+.login-form > h1{
+
+    position: relative;
+    left: 3.15em;
+    top: 2.6em;
+    color: var(--title-Clr-);
+}
+.login-form > input{
+    height: 3.2em;
+    width: 18em;
+    margin: 0em 2.5em 1em 2.5em;
+    position: relative;
+    top: 9em;
+    color: gray;
+    border: silver solid 2.5px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+}
+.LoginButton{ 
+    position: absolute;
+    top: 12.2em;
+    left: 3.3em;
+    font-size: 2em;
+    padding: .2em 1.5em;
+    border-radius: 50px;
+   
+    background:var(--Primary-Color);
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    border:none;
+}
+.LoginButton:hover{
+    opacity: 1;
+    padding: .3em 1.6em;
+    background:var(--secondary-Color);
+
+    
+}
+.login-form > span , label {
+    color: gray;
+    position: relative;
+    top: 15em;
+    left: 6em;
+}
+
+.login-form  a{
+    color: gray;
+    position: relative;
+    left: 9em;
+    top: 16em;
+}
+.login-form a:hover{
+    left: 8.5em;
+    top: 15.45em;
+    font-size: 1.05em ;
+    color: var(--title-Clr-);
+}
+.login-form label:hover{
+    left: 5.55em;
+    top: 14em;
+    font-size: 1.05em ;
+    color: var(--title-Clr-);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1920px) 
+{
+
+
+
+    
+    section{
+        align-self: center;
+        transform: translate(4%, 10%);
+        width: min(85% , 75em);
+        margin-left: 2em ;
+    
+    }
+    main{ 
+        width: min(80% , 70em);
+    }
+  
+    .main{
+        position: relative;
+        top:-5em ;
+        left: 1em;
+        width: min(80%, 40em );
+    
+    }
+
+  
+    #Log-Main{
+        position: absolute;
+        width: 22em;
+        height: 30em;    
+        left: 45em;
+        top: 3em;
+
+    }
+      
+   .Head-Title{
+       position: relative;
+       left: -0.5em;
+       top: -1em;
+       font-size: 1.95em;
+   
+   }
+   .Sub-Title{     
+   position: relative;
+   top: -2.2em;
+   left: 1em;
+        
+   }
+
+ 
+   
+   
+   
+   #Log-Main{
+    position: relative;
+    left: 20em;
+    top: 5em;
+    margin: 0.2em, 1em 1em 1em ;    
+    }
+  
+    
+    .Log-Main{
+    position: relative;
+    left: 0em;
+    top: 1em;
+    margin: 0.2em, 1em 1em 1em ;    
+    }
+    
+    .Log-Main{
+        position: absolute;
+        width: 22em;
+        height: 30em;
+       
+
+    }
+     
+   .login-form > h1{
+    position: relative;
+    left: 2.7em;
+    top: 1em;
+}
+.login-form > input{
+    height: 2.8em;
+    width: 16em;
+    margin: 0em 2.5em 1em 2.5em;
+    position: relative;
+    top: 6em;
+}
+.LoginButton{ 
+    position: absolute;
+    top: 11.2em;
+    font-size: 1.8em;
+}
+.LoginButton:hover{
+    opacity: 1;
+    padding: .25em 1.5em;
+    position: absolute;
+    top: 11em;
+    left: 3.4em;
+    background-color: var(--secondary-Color);
+    
+}
+.login-form > span , label {
+    position: relative;
+    top: 11.8em;
+    left: 4.5em;
+}
+
+.login-form  a{
+    position: relative;
+    left: 8em;
+    top: 12.5em;
+}
+.login-form a:hover{
+    left: 8.2em;
+    top: 11.8em;
+    font-size: 1.06em ;
+}
+.login-form label:hover{
+    left: 4.8em;
+    top: 11em;
+    font-size: 1.05em ;
+    color: var(--title-Clr-);
+    cursor: pointer;
+}
+ 
+    #Logo-Login{
+        top:-14.2em;
+
+    }
+
+    body{
+    overflow: hidden;
+    }
+}
+
+
+@media (max-width: 2150px) 
+{
+
+
+
+    
+    section{
+        align-self: center;
+        transform: translate(4%, 10%);
+        width: min(85% , 75em);
+        margin-left: 2em ;
+    
+    }
+    main{ 
+        width: min(80% , 70em);
+    }
+  
+    .main{
+        position: relative;
+        top:-5em ;
+        left: 1em;
+        width: min(80%, 40em );
+    
+    }
+
+
+    
+.Logo{
+    height: 14em;
+    width: 35%;
+    position: relative;
+    top: 3em;
+    left: 0em;
+   }
+   
+   .Head-Title{
+       position: relative;
+       left: -0.5em;
+       top: -1em;
+       font-size: 1.95em;
+   
+   }
+   .Sub-Title{     
+   position: relative;
+   top: -2.2em;
+   left: 1em;
+        
+   }
+     
+    #Log-Main{
+        position: absolute;
+        width: 22em;
+        height: 30em;    
+        left: 45em;
+        top: 3em;
+
+    }
+     
+   .login-form > h1{
+    position: relative;
+    left: 2.7em;
+    top: 1em;
+}
+.login-form > input{
+    height: 2.8em;
+    width: 16em;
+    margin: 0em 2.5em 1em 2.5em;
+    position: relative;
+    top: 6em;
+}
+.LoginButton{ 
+    position: absolute;
+    top: 11.2em;
+    font-size: 1.8em;
+}
+.LoginButton:hover{
+    opacity: 1;
+    padding: .25em 1.5em;
+    position: absolute;
+    top: 11em;
+    left: 3.4em;
+    background-color: var(--secondary-Color);
+    
+}
+.login-form > span , label {
+    position: relative;
+    top: 11.8em;
+    left: 4.5em;
+}
+
+.login-form  a{
+    position: relative;
+    left: 8em;
+    top: 12.5em;
+}
+.login-form a:hover{
+    left: 8.2em;
+    top: 11.8em;
+    font-size: 1.06em ;
+}
+.login-form label:hover{
+    left: 4.8em;
+    top: 11em;
+    font-size: 1.05em ;
+    color: var(--title-Clr-);
+    cursor: pointer;
+}
+ 
+    #Logo-Login{
+        top:-14.2em;
+
+    }
+
+    
+}
+
